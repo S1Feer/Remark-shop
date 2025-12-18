@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/style_login.css">
+    <title>Ремарк | Вход</title>
+    <style>
+        @font-face {
+            font-family: 'MyGothicFont';
+            src: url('static/fonts/caslonantique.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <div class="candle" style="bottom: 20px; right: 20px;" aria-hidden="true"></div>
+    <div class="candle" style="bottom: 20px; left: 20px;" aria-hidden="true"></div>
+    
+    <div class="page">
+        <header class="header">
+            <h1>Сеть готических магазинов в Санкт-Петербурге</h1>
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html"><img id="sitelogo" src="static/images/sitelogo.png" alt="Лого сайта"></a>
+                    <img id="sitename" src="static/images/sitename.jpg" alt="Название сайта">
+                </div>
+                <div class="header-right">
+                    <a href="profile.html"><img id="profile-icon" src="static/images/profile-icon.png" alt="Иконка профиля"></a>
+                    <a href="basket.html" id="basket-link">
+                        <img id="basket" src="static/images/shop_basket.png" alt="Иконка корзины">
+                        <span id="basket-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-remark">
+                <ul>
+                    <li><a id="index-page" href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a id="catalog" href="catalog_remark.html">КАТАЛОГ</a></li>
+                    <li><a class="nav-btn" href="contacts_remark.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="main">
+            <div class="auth-container">
+                <!--форма входа-->
+                <div class="auth-form active" id="login-form">
+                    <h2 class="auth-title">ВХОД</h2>
+                    
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" required 
+                                   placeholder="ваш@email.com"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="login-password">Пароль</label>
+                            <input type="password" id="login-password" name="password" required 
+                                   placeholder="••••••••"
+                                   minlength="6">
+                            <div class="password-toggle">
+                                <input type="checkbox" id="show-login-password">
+                                <label for="show-login-password">Показать пароль</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">ВОЙТИ</button>
+                        
+                        <div class="auth-links">
+                            <a href="#" id="switch-to-register">Нет аккаунта? Зарегистрироваться</a>
+                            <!-- <a href="#" class="forgot-password">Забыли пароль?</a> -->
+                        </div>
+                    </form>
+                </div>
+                
+                <!--форма регистрации-->
+                <div class="auth-form" id="register-form">
+                    <h2 class="auth-title">РЕГИСТРАЦИЯ</h2>
+                    
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="reg-name">Имя</label>
+                            <input type="text" id="reg-name" name="name" required 
+                                   placeholder="Ваше имя"
+                                   pattern="[А-Яа-яЁё\s]{2,50}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" name="email" required 
+                                   placeholder="ваш@email.com"
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-phone">Телефон</label>
+                            <input type="tel" id="reg-phone" name="phone" required 
+                                   placeholder="+7 (999) 123-45-67"
+                                   pattern="[\+]?[7-8]?[0-9\s\-\(\)]{10,15}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-password">Пароль</label>
+                            <input type="password" id="reg-password" name="password" required 
+                                   placeholder="••••••••"
+                                   minlength="6">
+                            <div class="password-hint">Минимум 6 символов</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reg-password-confirm">Подтвердите пароль</label>
+                            <input type="password" id="reg-password-confirm" name="password_confirm" required 
+                                   placeholder="••••••••">
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="reg-agreement" name="agreement" required>
+                            <label for="reg-agreement">
+                                Я согласен с <a href="#">правилами</a> и 
+                                <a href="#">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                        
+                        <div class="auth-links">
+                            <a href="#" id="switch-to-login">Уже есть аккаунт? Войти</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="bottom">
+            <p>© Ремарк, Санкт-Петербург</p>
+        </footer>
+    </div>
+
+    <script src="js/basket.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

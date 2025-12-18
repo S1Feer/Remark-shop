@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/style_catalog_items.css">
+    <title>Ремарк | Все товары</title>
+    <style>
+        @font-face {
+            font-family: 'MyGothicFont';
+            src: url('static/fonts/caslonantique.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="candle" style="bottom: 20px; right: 20px;" aria-hidden="true"></div>
+    <div class="candle" style="bottom: 20px; left: 20px;" aria-hidden="true"></div>
+
+    <div class="page">
+        <header class="header">
+            <h1>Сеть готических магазинов в Санкт-Петербурге</h1>
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html"><img id="sitelogo" src="static/images/sitelogo.png" alt="Лого сайта"></a>
+                    <img id="sitename" src="static/images/sitename.jpg" alt="Название сайта">
+                </div>
+                <div class="header-right">
+                    <a href="profile.html"><img id="profile-icon" src="static/images/profile-icon.png"
+                            alt="Иконка профиля"></a>
+                    <a href="basket.html" id="basket-link">
+                        <img id="basket" src="static/images/shop_basket.png" alt="Иконка корзины">
+                        <span id="basket-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-remark">
+                <ul>
+                    <li><a id="index-page" href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a id="catalog" href="catalog_remark.html">КАТАЛОГ</a></li>
+                    <li><a class="nav-btn" href="contacts_remark.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="catalog-page-header">
+                <h2 class="page-title">ВСЕ ТОВАРЫ</h2>
+                <a href="catalog_remark.html" class="back-link">← Назад к категориям</a>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="static/images/new1.jpg" alt="одежда_1" class="product-image">
+                    <h3 class="product-title">Платье с блестками</h3>
+                    <p class="product-price">3.200 ₽</p>
+                    <button class="add-to-basket" data-id="201">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/new2.jpg" alt="одежда_2" class="product-image">
+                    <h3 class="product-title">Блуза черная</h3>
+                    <p class="product-price">3.900 ₽</p>
+                    <button class="add-to-basket" data-id="202">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/new3.jpg" alt="одежда_3" class="product-image">
+                    <h3 class="product-title">Кроваво-красное платье</h3>
+                    <p class="product-price">6.700 ₽</p>
+                    <button class="add-to-basket" data-id="203">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/cloth_4.jpg" alt="одеджда_4" class="product-image">
+                    <h3 class="product-title">Костюм из бархата</h3>
+                    <p class="product-price">6.700 ₽</p>
+                    <button class="add-to-basket" data-id="204">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/cloth_5.jpg" alt="одежда_5" class="product-image">
+                    <h3 class="product-title">Рубашка с жабо</h3>
+                    <p class="product-price">5.700 ₽</p>
+                    <button class="add-to-basket" data-id="205">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/cloth_6.jpg" alt="одежда_6" class="product-image">
+                    <h3 class="product-title">Прозрачная блуза</h3>
+                    <p class="product-price">4.200 ₽</p>
+                    <button class="add-to-basket" data-id="206">В корзину</button>
+                </div>
+                <div class="product-item">
+                    <img src="static/images/shoes_1.jpg" alt="обувь_1" class="product-image">
+                    <h3 class="product-title">Кеды Converse (реплика)</h3>
+                    <p class="product-price">2.900 ₽</p>
+                    <button class="add-to-basket" data-id="101">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/shoes_2.jpg" alt="обувь_2" class="product-image">
+                    <h3 class="product-title">Туфли из эко-кожи</h3>
+                    <p class="product-price">2.600 ₽</p>
+                    <button class="add-to-basket" data-id="102">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/shoes_3.jpg" alt="обувь_3" class="product-image">
+                    <h3 class="product-title">Ботинки</h3>
+                    <p class="product-price">6.500 ₽</p>
+                    <button class="add-to-basket" data-id="103">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/shoes_4.jpg" alt="обувь_4" class="product-image">
+                    <h3 class="product-title">Ботильоны</h3>
+                    <p class="product-price">6.900 ₽</p>
+                    <button class="add-to-basket" data-id="104">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/shoes_5.jpg" alt="обувь_5" class="product-image">
+                    <h3 class="product-title">Кеды Converse (реплика)</h3>
+                    <p class="product-price">3.100 ₽</p>
+                    <button class="add-to-basket" data-id="105">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/shoes_6.jpg" alt="обувь_6" class="product-image">
+                    <h3 class="product-title">Dr.Martens (реплика)</h3>
+                    <p class="product-price">4.800 ₽</p>
+                    <button class="add-to-basket" data-id="106">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_1.jpg" alt="укр_1" class="product-image">
+                    <h3 class="product-title">Синий кулон из эпоксидной смолы</h3>
+                    <p class="product-price">900 ₽</p>
+                    <button class="add-to-basket" data-id="301">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_2.jpg" alt="укр_2" class="product-image">
+                    <h3 class="product-title">Бусы</h3>
+                    <p class="product-price">1.100 ₽</p>
+                    <button class="add-to-basket" data-id="302">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_3.jpg" alt="укр_3" class="product-image">
+                    <h3 class="product-title">Красный кулон</h3>
+                    <p class="product-price">1.100 ₽</p>
+                    <button class="add-to-basket" data-id="303">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_4.jpg" alt="укр_4" class="product-image">
+                    <h3 class="product-title">Колье с шипами</h3>
+                    <p class="product-price">1.700 ₽</p>
+                    <button class="add-to-basket" data-id="304">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_5.jpg" alt="укр_5" class="product-image">
+                    <h3 class="product-title">Серьги в виде крестов</h3>
+                    <p class="product-price">1.000 ₽</p>
+                    <button class="add-to-basket" data-id="305">В корзину</button>
+                </div>
+
+                <div class="product-item">
+                    <img src="static/images/jew_6.jpg" alt="укр_6" class="product-image">
+                    <h3 class="product-title">Подвеска с крестом</h3>
+                    <p class="product-price">900 ₽</p>
+                    <button class="add-to-basket" data-id="306">В корзину</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bottom">
+            <p>© Ремарк, Санкт-Петербург</p>
+        </footer>
+
+        <script src="js/basket.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/catalog_items.js"></script>
+    </div>
+</body>
+
+</html>

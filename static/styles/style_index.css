@@ -1,0 +1,116 @@
+#goth-girl {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px dotted rgb(154, 23, 41);
+    border-radius: 10px;
+}
+
+.main-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+#pisanina {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border: 1px solid rgb(154, 23, 41);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#zakaz-btn {
+    display: inline-block;
+    border: 1px solid rgb(154, 23, 41);
+    border-radius: 30px;
+    padding: 30px 70px;
+    margin-left: 190px;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#zakaz-btn:hover {
+    background-color: rgb(154, 23, 41);
+}
+
+
+.new-products {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid rgb(154, 23, 41);
+}
+
+.new-products>h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product-card {
+    background: rgba(154, 23, 41, 0.1);
+    border: 1px solid rgb(154, 23, 41);
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card:hover {
+    background: rgba(154, 23, 41, 0.25);
+    box-shadow: 0 0 10px rgba(154, 23, 41, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .product-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #goth-girl {
+        max-width: 300px;
+    }
+    #pisanina {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    #zakaz-btn {
+        width: 100px;
+        margin-right: 190px;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px) {
+    #zakaz-btn {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}

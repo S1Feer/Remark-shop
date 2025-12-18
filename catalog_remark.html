@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/style_catalog.css">
+    <title>Ремарк | Каталог</title>
+    <style>
+        @font-face {
+            font-family: 'MyGothicFont';
+            src: url('static/fonts/caslonantique.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <div class="candle" style="bottom: 20px; right: 20px;" aria-hidden="true"></div>
+    <div class="candle" style="bottom: 20px; left: 20px;" aria-hidden="true"></div>
+
+    <div class="page">
+        <header class="header">
+            <h1>Сеть готических магазинов в Санкт-Петербурге</h1>
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html"><img id="sitelogo" src="static/images/sitelogo.png" alt="Лого сайта"></a>
+                    <img id="sitename" src="static/images/sitename.jpg" alt="Название сайта">
+                </div>
+                <div class="header-right">
+                    <a href="profile.html"><img id="profile-icon" src="static/images/profile-icon.png"
+                            alt="Иконка профиля"></a>
+                    <a href="basket.html" id="basket-link">
+                        <img id="basket" src="static/images/shop_basket.png" alt="Иконка корзины">
+                        <span id="basket-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-remark">
+                <ul>
+                    <li><a id="index-page" href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a id="catalog" href="catalog_remark.html">КАТАЛОГ</a></li>
+                    <li><a class="nav-btn" href="contacts_remark.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="catalog-header">
+                <h2 class="catalog-title">КАТАЛОГ ТОВАРОВ</h2>
+                <p class="catalog-subtitle">Выберите категорию для просмотра коллекции</p>
+            </div>
+
+            <div class="catalog-sections">
+                <!--всё-->
+                <a href="catalog_all.html" class="section-card">
+                    <div class="section-icon">♣️</div>
+                    <h3 class="section-title">ВСЕ ТОВАРЫ</h3>
+                    <p class="section-description">Полный каталог готической атрибутики</p>
+                </a>
+
+                <!--тапки-->
+                <a href="catalog_shoes.html" class="section-card">
+                    <div class="section-icon">♥️</div>
+                    <h3 class="section-title">ОБУВЬ</h3>
+                    <p class="section-description">Ботинки, туфли, кроссовки в готическом стиле</p>
+                </a>
+
+                <!-- шмот-->
+                <a href="catalog_clothing.html" class="section-card">
+                    <div class="section-icon">♠️ </div>
+                    <h3 class="section-title">ОДЕЖДА</h3>
+                    <p class="section-description">Платья, корсеты, куртки и аксессуары</p>
+                </a>
+
+                <!--украшения-->
+                <a href="catalog_jewelry.html" class="section-card">
+                    <div class="section-icon">♦️</div>
+                    <h3 class="section-title">УКРАШЕНИЯ</h3>
+                    <p class="section-description">Колье, кольца, серьги ручной работы</p>
+                </a>
+            </div>
+
+            <div class="catalog-promo">
+                <h3>ЭКСКЛЮЗИВНЫЕ КОЛЛЕКЦИИ</h3>
+                <p>Каждый товар в нашем каталоге — это уникальное изделие.
+                    Ограниченные тиражи, ручная работа и внимание к деталям.</p>
+                <p class="promo-note">Бесплатная примерка в магазинах СПб • Доставка по России</p>
+            </div>
+        </main>
+
+        <footer class="bottom">
+            <p>© Ремарк, Санкт-Петербург</p>
+        </footer>
+
+        <script src="js/basket.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/catalog.js"></script>
+    </div>
+</body>
+</html>

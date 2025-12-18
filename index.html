@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/images/favicon.ico">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/style_index.css">
+    <title>Ремарк | Готический магазин</title>
+    <style>
+        @font-face {
+            font-family: 'MyGothicFont';
+            src: url('static/fonts/caslonantique.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+<body>
+    <div class="candle" style="bottom: 20px; right: 20px;" aria-hidden="true"></div>
+    <div class="candle" style="bottom: 20px; left: 20px;" aria-hidden="true"></div>
+    <!-- свечки -->
+    <div class="page">
+        <header class="header">
+            <h1>Сеть готических магазинов в Санкт-Петербурге</h1>
+
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html"><img id="sitelogo" src="static/images/sitelogo.png" alt="Лого сайта"></a>
+                    <img id="sitename" src="static/images/sitename.jpg" alt="Название сайта">
+                </div>
+                <div class="header-right">
+                    <a href="profile.html"><img id="profile-icon" src="static/images/profile-icon.png" alt="Иконка профиля"></a>
+                    <a href="basket.html" id="basket-link">
+                        <img id="basket" src="static/images/shop_basket.png" alt="Иконка корзины">
+                        <span id="basket-count">0</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="nav-remark">
+                <ul>
+                    <li><a id="index-page" href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a id="catalog" href="catalog_remark.html">КАТАЛОГ</a></li>
+                    <li><a class="nav-btn" href="contacts_remark.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <img id="goth-girl" src="static/images/goth_girl_1.png" alt="Готическая девушка">
+            <div class="main-text">
+                <p id="pisanina">
+                    В Ремарке мы верим, что стиль — это не маска, а выбор. Наши изделия — это ограниченные тиражи,
+                    ремесленная отделка и продуманный дизайн. Откройте каталог, чтобы найти украшение, платье или
+                    предмет интерьера, который станет частью вашей истории. Быстрая доставка по Санкт-Петербургу,
+                    безопасная оплата и возможность резервирования в магазине.
+                </p>
+                <a id="zakaz-btn" href="catalog_remark.html">ЗАКАЗАТЬ</a>
+            </div>
+        </main>
+        <section class="new-products">
+            <h2>НОВИНКИ</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="static/images/new1.jpg" alt="Новинка I">
+                    <p>Платье с блестками</p>
+                </div>
+                <div class="product-card">
+                    <img src="static/images/new2.jpg" alt="Новинка II">
+                    <p>Блуза черная</p>
+                </div>
+                <div class="product-card">
+                    <img src="static/images/new3.jpg" alt="Новинка III">
+                    <p>Кроваво-красное платье</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bottom">
+            <p>© Ремарк, Санкт-Петербург</p>
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

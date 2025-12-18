@@ -1,0 +1,252 @@
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.catalog-header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(154, 23, 41, 0.3);
+}
+
+.catalog-title {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-shadow: 0 0 8px rgba(154, 23, 41, 0.5);
+    font-weight: bold;
+}
+
+.catalog-subtitle {
+    color: #aaa;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.catalog-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 0 60px;
+}
+
+.section-card {
+    display: block;
+    text-decoration: none;
+    background: rgba(154, 23, 41, 0.1);
+    border: 2px solid rgba(154, 23, 41, 0.3);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-card:hover {
+    background: rgba(154, 23, 41, 0.2);
+    border-color: rgb(154, 23, 41);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(154, 23, 41, 0.25);
+}
+
+.section-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: left 0.7s ease;
+}
+
+.section-card:hover::before {
+    left: 100%;
+}
+
+.section-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgb(154, 23, 41);
+    text-shadow: 0 0 8px rgba(154, 23, 41, 0.5);
+}
+
+.section-title {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.section-description {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    max-width: 90%;
+}
+
+.section-count {
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(154, 23, 41);
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid rgba(154, 23, 41, 0.3);
+    margin-top: 8px;
+}
+
+.catalog-promo {
+    background: rgba(154, 23, 41, 0.05);
+    border: 1px solid rgba(154, 23, 41, 0.2);
+    border-radius: 15px;
+    padding: 35px;
+    margin: 60px 0 30px;
+    text-align: center;
+}
+
+.catalog-promo h3 {
+    color: rgb(154, 23, 41);
+    font-size: 22px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.catalog-promo p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+.promo-note {
+    color: #aaa;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(154, 23, 41, 0.3);
+}
+
+@media (max-width: 1200px) {
+    .catalog-sections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .section-card {
+        min-height: 200px;
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .catalog-title {
+        font-size: 36px;
+    }
+    
+    .catalog-subtitle {
+        font-size: 16px;
+    }
+    
+    .section-card {
+        min-height: 180px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .section-icon {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+    
+    .catalog-title {
+        font-size: 32px;
+        letter-spacing: 3px;
+    }
+    
+    .catalog-sections {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 30px auto 40px;
+    }
+    
+    .section-card {
+        min-height: 160px;
+        padding: 20px 15px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .section-description {
+        font-size: 13px;
+    }
+    
+    .catalog-promo {
+        padding: 25px 20px;
+        margin: 40px 0 20px;
+    }
+    
+    .catalog-promo h3 {
+        font-size: 20px;
+    }
+    
+    .catalog-promo p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-title {
+        font-size: 28px;
+    }
+    
+    .catalog-subtitle {
+        font-size: 14px;
+    }
+    
+    .section-card {
+        min-height: 150px;
+        padding: 18px 12px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .section-icon {
+        font-size: 32px;
+    }
+    
+    .section-description {
+        font-size: 12px;
+        max-width: 95%;
+    }
+    
+    .section-count {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+}
