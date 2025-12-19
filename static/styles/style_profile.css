@@ -130,3 +130,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .profile-main-title {
+        font-size: 18px;
+    }
+}
