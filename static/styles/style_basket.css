@@ -195,7 +195,6 @@
     min-width: 120px;
 }
 
-/* Правая часть: итоги - увеличен */
 .basket-sidebar {
     background: rgba(0, 0, 0, 0.7);
     border: 2px solid rgba(154, 23, 41, 0.4);
@@ -372,3 +371,15 @@
         font-size: 18px;
     }
 }
+
+/* @media (max-width: 375px) {
+    .basket-container,.basket-items,#basket-items {
+        height: 120px;
+    }
+} */
+
+/* @media (max-width: 375px) {
+    .basket-container {
+        height: 180px;
+    }
+} */
