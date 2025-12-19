@@ -83,6 +83,10 @@
     .product-card {
         width: 45%;
     }
+
+    #zakaz-btn {
+        margin-left: 160px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -92,25 +96,63 @@
     #pisanina {
         width: 70%;
         font-size: 1rem;
+        margin-left: 70px;
     }
 
     #zakaz-btn {
-        width: 100px;
         margin-right: 190px;
+        padding-right: 115px;
+        margin: 0;
+        margin-top: 20px;
+        width: auto;
+        padding: 30px;
+    }
+
+     #goth-girl {
+        max-width: 300px;
+    }
+    #pisanina {
+        font-size: 1rem;
+        margin: 0;
+        width: 250px;
     }
 
     .product-card {
         width: 80%;
     }
+
+    .main {
+        padding: 0;
+        
+    }
 }
 
 @media (max-width: 425px) {
-    #zakaz-btn {
-        font-size: 18px;
-        padding: 10px 25px;
-    }
-
     .product-card {
         width: 100%;
     }
+
+        #goth-girl {
+        max-width: 300px;
+    }
+    #pisanina {
+        font-size: 1rem;
+        margin: 0;
+        width: 250px;
+    }
+
+    #zakaz-btn {
+        width: 100px;
+        margin: 0;
+        margin-top: 20px;
+        width: auto;
+        padding: 30px;
+    }
+
+    .main-text {
+        max-width: 500px;
+        text-align: center;
+    }
+
 }
+
