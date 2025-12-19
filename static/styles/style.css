@@ -212,7 +212,7 @@ h1 {
         width: 100px;
     }
 
-    .nav-btn, #catalog {
+    .nav-btn, #catalog, #index-page {
         font-size: 22px;
         padding: 15px 0;
     }
@@ -257,19 +257,24 @@ h1 {
     }
 
     #basket, #profile-icon {
+        display: flex;
         height: 30px;
         width: auto;
         margin-left: 10px;
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:375px) {
     #sitelogo {
         width: 85px;
     }
 
     #sitename {
         width: 140px;
+    }
+
+    .header-right {
+        align-items: center;
     }
 }
 
@@ -295,4 +300,40 @@ h1 {
         top: -6px;
         right: -6px;
     }
+}
+
+@media (max-width: 515px) {
+    .nav-remark>ul>li {
+        width: 50%;
+    }
+
+    .nav-remark>ul>li>a {
+        font-size: 20px;
+    }
+
+    .main>ul {
+        display: block;
+}
+
+}
+@media (max-width: 380px) {
+    #nav-btn {
+        font-size: 22px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 370px) {
+    .nav-remark>ul>li>a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    #index-page, #catalog, .nav-btn {
+        font-size: 14px;
+    }
+    .main>ul {
+        margin-left: 10px;
+}
 }
