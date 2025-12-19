@@ -69,3 +69,23 @@
     border-left: 3px solid rgb(154, 23, 41);
     font-size: 22px;
 }
+
+
+@media (max-width: 1024px) {
+    .main>ul {
+    margin-left: 240px;
+}
+}
+
+@media (max-width: 768px) {
+    .main>ul {
+    margin-left: 50px;
+}
+}
+
+@media (max-width: 575px) {
+    .main>ul {
+    margin-left: 30px;
+}
+}
+
